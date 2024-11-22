@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>微信支付</title>
+<style>
+ body {
+   font-family: Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+ }
+ .container {
+   text-align: center;
+   position: relative; /* 使容器具有相对定位 */
+ }
+ .qrcode {
+   width: 200px;
+   height: 200px;
+   display: block; /* 确保二维码图片是块级元素 */
+ }
+ .description {
+   margin-top: 10px;
+   font-size: 16px; /* 调整此字体大小以改变文字大小 */
+ }
+ .payment-description {
+   font-size: 20px; /* 调整此字体大小以改变文字大小 */
+   position: absolute; /* 绝对定位 */
+   top: 0; /* 定位到容器的顶部 */
+   width: 200px; /* 设置与二维码相同的宽度 */
+   text-align: center; /* 文字居中 */
+   margin-top: -4em; /* 负值上移，大约两个字体大小的距离 */
+ }
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="D:\Pictures\weixin.jpg" alt="微信二维码" class="qrcode">
+  <div class="payment-description">请扫描下方二维码进行微信支付</div> <!-- 文字放置在二维码正上方 -->
+</div>
+</body>
+</html>
